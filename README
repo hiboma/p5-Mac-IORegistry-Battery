@@ -2,7 +2,7 @@ NAME
     Mac::IORegistry::Battery.
 
 DESCRIPTION
-    get battery information on Mac OSX via /usr/sbin/ioreg
+    get battery information on Mac OSX by '/usr/sbin/ioreg'
 
 SAMPLE
 
