@@ -6,7 +6,7 @@ DESCRIPTION
 
 SAMPLE
 
-$ perl -MYAML::Syck -MMac::Battery -e 'print YAML::Syck::Dump(Mac::Battery->get_registry)'
+$ perl -MYAML::Syck -MMac::IORegistry::Battery -e 'print YAML::Syck::Dump(Mac::IORegistry::Battery->get)'
 --- 
 AdapterInfo: 0
 Amperage: 314
