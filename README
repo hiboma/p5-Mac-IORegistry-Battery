@@ -1,0 +1,80 @@
+This is Perl module Mac::IORegistry::Battery.
+
+SAMPLE
+
+$ perl -MYAML::Syck -MMac::Battery -e 'print YAML::Syck::Dump(Mac::Battery->get_registry)'
+--- 
+AdapterInfo: 0
+Amperage: 314
+AvgTimeToEmpty: 65535
+AvgTimeToFull: 0
+BatteryInstalled: 'Yes'
+BatteryInvalidWakeSeconds: 30
+BatterySerialNumber: ************
+CellVoltage: 
+  - 4192
+  - 4190
+  - 4191
+  - 0
+CurrentCapacity: 6772
+CycleCount: 48
+DesignCapacity: 6900
+DesignCycleCount70: 65535
+DesignCycleCount9C: 1000
+DeviceName: bq20z451
+ExternalChargeCapable: 'Yes'
+ExternalConnected: 'Yes'
+FirmwareSerialNumber: *****
+FullyCharged: 'Yes'
+IOGeneralInterest: IOCommand is not serializable
+InstantAmperage: 311
+InstantTimeToEmpty: 65535
+IsCharging: 'No'
+LatestErrorType: Capacity Read Zero
+LegacyBatteryInfo: 
+  Amperage: 314
+  Capacity: 6772
+  Current: 6772
+  Cycle Count: 48
+  Flags: 5
+  Voltage: 12573
+Location: 0
+ManufactureDate: 15928
+Manufacturer: SMP
+ManufacturerData: <000000000201000a015800000******************************>
+MaxCapacity: 6772
+MaxErr: 1
+PermanentFailureStatus: 0
+PostChargeWaitSeconds: 120
+PostDischargeWaitSeconds: 120
+Quick Poll: 'No'
+Temperature: 3073
+TimeRemaining: 0
+Voltage: 12573
+
+
+INSTALLATION
+
+Mac::IORegistry::Battery installation is straightforward. If your CPAN shell is set up,
+you should just be able to do
+
+    % cpan Mac::IORegistry::Battery
+
+Download it, unpack it, then build it as per the usual:
+
+    % perl Makefile.PL
+    % make && make test
+
+Then install it:
+
+    % make install
+
+DOCUMENTATION
+
+Mac::IORegistry::Battery documentation is available as in POD. So you can do:
+
+    % perldoc Mac::IORegistry::Battery
+
+to read the documentation online with your favorite pager.
+
+hiboma
